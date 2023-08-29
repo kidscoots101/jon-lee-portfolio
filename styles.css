@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #345995;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -58,7 +58,7 @@ nav a {
     flex: 1;}
 
 footer {
-    background-color: #333;
+    background-color: #345995;
     color: white;
     text-align: center;
     padding: 10px 0;
