@@ -7,6 +7,23 @@
     <link rel="icon" href="jon-header.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,6 +35,21 @@
             </ul>
         </nav>
     </header>
+    <script>
+        const navLinks = document.querySelectorAll("nav ul li a");
+    
+        navLinks.forEach(link => {
+            link.addEventListener("click", event => {
+                event.preventDefault();
+    
+                const target = document.querySelector(link.getAttribute("href"));
+                target.scrollIntoView({
+                    behavior: "smooth",
+                });
+            });
+        });
+    </script>
+    
     
     <section id="about">
         <div class="container">
@@ -40,7 +72,9 @@
             <h1>Awards and Achievements</h1>
             <ul class="awards-list">
                 <li>
-                    <div>
+                    <div class="awards-indiv">
+                        <div>
+                        </div>
                         <h2>2016 - 2020 Edusave Scholarship</h2>
                         <p>Awarded the prestigious Edusave Scholarship for outstanding academic performance and contributions to the school community.</p>    
                     </div>
@@ -85,7 +119,6 @@
     <section id="contact">
         <div class="container">
             <h1>Contact Me</h1>
-            <!-- <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:youremail@example.com">youremail@example.com</a>. Let's collaborate and create something amazing together!</p> -->
             <div class="social-icons">
                 <text>Linkedin: </text>
                 <a href="https://www.linkedin.com/in/jonathan-lee-5269ba285/" target="_blank" rel="noopener noreferrer">
